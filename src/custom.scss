@@ -1,8 +1,18 @@
-$primary: #eee;
-$font-color: #383838;
-$theme-color: #00cece;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap");
+
+$primary: #eeeeee;
+$font-color: #303030;
+$theme-color: #e0f2f3;
 $heading-fon-size: 22px;
-$normal-font-size: 18px;
+$normal-font-size: 16px;
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  color: #fff;
+  font-size: $normal-font-size + 2px;
+}
 
 .nav__link {
   color: $font-color !important;
@@ -17,9 +27,28 @@ $normal-font-size: 18px;
   background-color: $primary;
   padding: 1.5rem 0rem;
 }
+.footer .nav__link {
+  padding: 0.1em 0.5em !important;
+}
+.bg-picture {
+  background: url(./assets/jumbotron-bg-pic.png), no-repeat;
+  background-size: cover;
+}
 .jumbotronSection {
-  background-color: blue;
   width: 90vw;
+}
+.srearch-card {
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 3em;
+}
+@media (max-width: 800px) {
+  .srearch-card {
+    flex-direction: column;
+  }
 }
 
 @import "~bootstrap/scss/bootstrap";
