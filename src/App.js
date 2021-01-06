@@ -1,5 +1,5 @@
 import React from "react";
-import "./Custom.scss";
+import "./custom.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Main from "./components/Main";

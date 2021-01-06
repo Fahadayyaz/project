@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" bg="primary" variant="dark">
+    <Navbar expand="lg" bg="primary" variant="light">
       <Container>
         <Navbar.Brand href="index.html">
           <img
