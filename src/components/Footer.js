@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import {
   Navbar,
   Nav,
@@ -13,36 +12,74 @@ import {
 
 export default function Footer() {
   return (
-    <Container bg="dark" className="">
-      <Row>
-        <Col>
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-        </Col>
-        <Col>
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-        </Col>
-        <Col xs={4}>
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Form.Group>
-            <FormControl type="text" placeholder="Email Address" />
-            <Button variant="dark">Submit</Button>
-          </Form.Group>
-        </Col>
-        <Col>
-          <Nav.Link href="#">Home</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-          <Nav.Link href="#">Link</Nav.Link>
-        </Col>
-      </Row>
-    </Container>
+    <div className="footer">
+      <Container className="">
+        <Row>
+          <Col>
+            <Nav.Link href="#" className="nav__link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+          </Col>
+          <Col>
+            <Nav.Link href="#" className="nav__link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+          </Col>
+          <Col>
+            <Nav.Link href="#" className="nav__link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Form.Group
+              style={{
+                display: "flex",
+                alignItems: "center",
+                padding: "0rem 1rem",
+              }}
+            >
+              <FormControl type="text" placeholder="Email Address" />
+              <Button variant="dark">Submit</Button>
+            </Form.Group>
+          </Col>
+          <Col>
+            <Nav.Link href="#" className="nav__link">
+              Home
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+            <Nav.Link href="#" className="nav__link">
+              Link
+            </Nav.Link>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   );
 }

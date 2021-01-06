@@ -1,1 +1,25 @@
+$primary: #eee;
+$font-color: #383838;
+$theme-color: #00cece;
+$heading-fon-size: 22px;
+$normal-font-size: 18px;
+
+.nav__link {
+  color: $font-color !important;
+  font-weight: 400 !important;
+  font-size: $normal-font-size !important;
+}
+.nav__link:hover {
+  color: $theme-color !important;
+}
+.footer {
+  width: 100vw;
+  background-color: $primary;
+  padding: 1.5rem 0rem;
+}
+.jumbotronSection {
+  background-color: blue;
+  width: 90vw;
+}
+
 @import "~bootstrap/scss/bootstrap";

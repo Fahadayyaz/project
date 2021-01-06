@@ -1,18 +1,11 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Screen from "./Screens/Screen";
 
 export default function Main() {
   return (
-    <div>
-      {/* <Card border="primary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Primary Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card> */}
+    <div className="main">
+      <Screen />
     </div>
   );
 }
