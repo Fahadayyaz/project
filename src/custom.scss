@@ -2,15 +2,15 @@
 
 $primary: #eeeeee;
 $font-color: #303030;
-$theme-color: #e0f2f3;
-$heading-fon-size: 22px;
+$dark: #0098a0;
+$heading-font-size: 25px;
 $normal-font-size: 16px;
 
 body {
   font-family: "Raleway", sans-serif;
 }
 p {
-  color: #fff;
+  color: $primary;
   font-size: $normal-font-size + 2px;
 }
 
@@ -20,7 +20,7 @@ p {
   font-size: $normal-font-size !important;
 }
 .nav__link:hover {
-  color: $theme-color !important;
+  color: $dark !important;
 }
 .footer {
   width: 100vw;
@@ -31,7 +31,7 @@ p {
   padding: 0.1em 0.5em !important;
 }
 .bg-picture {
-  background: url(./assets/jumbotron-bg-pic.png), no-repeat;
+  background: url(./assets/homepageCompany/jumbotron-bg-pic.png), no-repeat;
   background-size: cover;
 }
 .jumbotronSection {
@@ -44,8 +44,43 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 5em 3em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 0rem !important;
 }
-@media (max-width: 800px) {
+.section-heading {
+  text-align: center;
+  font-size: $heading-font-size !important;
+  color: $dark !important;
+}
+.section-icons {
+  width: 90%;
+  padding: 3em 2em;
+}
+.imgCard .overLay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center !important;
+  align-items: center !important;
+}
+.imgCard:hover .overLay {
+  display: flex;
+}
+.section-heading-hiring {
+  text-align: center;
+  font-size: $heading-font-size !important;
+  color: $dark !important;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .jumbotronSection {
+    width: 100%;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .srearch-card {
     flex-direction: column;
   }

@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Screen from "./Screens/Screen";
+import HomepageCompany from "./Screens/HomepageCompany";
 
 export default function Main() {
   return (
     <div className="main">
-      <Screen />
+      <HomepageCompany />
     </div>
   );
 }
