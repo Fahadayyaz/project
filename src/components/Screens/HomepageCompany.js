@@ -31,7 +31,7 @@ export default function HomepageCompany() {
     <Container fluid>
       <Jumbotron
         className="bg-picture"
-        style={{ minHeight: "560px", marginBottom: "0rem" }}
+        style={{ minHeight: "fit-content", marginBottom: "0rem" }}
       >
         <Container
           style={{
@@ -357,7 +357,6 @@ export default function HomepageCompany() {
         </Container>
       </Container>
       <Container fluid className="stories-section">
-
         <Container>
           <img src={successpic} alt="successpic" style={{ width: "100%" }} />
           <Row>
