@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import HomepageCompany from "./Screens/HomepageCompany";
+import HomepageResearcher from "./Screens/HomepageResearcher";
 import HomepageJobSeeker from "./Screens/HomepageJobSeeker";
 import Homepage from "./Screens/Homepage";
 
@@ -8,11 +9,14 @@ export default function Main() {
   return (
     <div className="main">
       <Switch>
-        <Route path="/company">
+        <Route path="/" exact>
           <Homepage />
         </Route>
-        <Route path="/" exact>
+        <Route path="/company">
           <HomepageCompany />
+        </Route>
+        <Route path="/researcher">
+          <HomepageResearcher />
         </Route>
         <Route path="/jobSeeker">
           <HomepageJobSeeker />

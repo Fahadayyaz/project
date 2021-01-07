@@ -1,0 +1,10 @@
+.card__body .card__overlay{
+    display: none;
+    user-select: none;
+    background-color: rgba(0,0,0,.80) !important;
+}
+.card__body:hover .card__overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

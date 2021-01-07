@@ -1,6 +1,6 @@
 import React from "react";
-import "./HomepageJobSeeker.scss";
+import "./HomepageResearcher.scss";
 
 export default function HomepageJobSeeker() {
-  return <div>homepageJobSeeker</div>;
+  return <div>homepageResearcher</div>;
 }
