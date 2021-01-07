@@ -34,9 +34,12 @@ export default function HomepageCompany() {
       >
         <Container
           style={{
-            display: "flex", flexDirection: "column", justifyContent: "center", height: "400px",
-          }}>
-
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            height: "400px",
+          }}
+        >
           <h1 style={{ width: "40%", color: "#fff" }}>
             Discover Top Jobs For Data Professionals
           </h1>
