@@ -24,6 +24,7 @@ import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
 import happypic from "../../assets/homepageCompany/happypic.png";
 import sadpic from "../../assets/homepageCompany/sadpic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
+import "./HomepageCompany.scss";
 
 export default function HomepageCompany() {
   return (
@@ -356,9 +357,10 @@ export default function HomepageCompany() {
         </Container>
       </Container>
       <Container fluid className="stories-section">
+        
+        <Container>
         <img src={successpic} alt="successpic" style={{ width: "100%" }} />
-        <Container className="absoluteOverlay">
-          <Row style={{ minWidth: "100vw", padding: "0rem 2rem" }}>
+          <Row>
             <Col
               style={{
                 display: "flex",
