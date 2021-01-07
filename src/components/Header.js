@@ -12,7 +12,7 @@ export default function Header() {
       style={{ minHight: "140px" }}
     >
       <Container>
-        <Navbar.Brand href="index.html">
+        <Navbar.Brand as={Link} to="/">
           <img
             src={logo}
             width="fit-content"
@@ -24,7 +24,7 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link as={Link} to="/coffee-corner" exact className="nav__link">
+            <Nav.Link as={Link} to="/coffee-corner" className="nav__link">
               Coffee Corner
             </Nav.Link>
             <Nav.Link as={Link} to="/about" className="nav__link">

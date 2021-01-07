@@ -5,7 +5,18 @@ import HomepageCompany from "./Screens/HomepageCompany";
 export default function Main() {
   return (
     <div className="main">
-      <HomepageCompany />
+      <Switch>
+        <Route path="/">
+            <HomepageCompany />
+        </Route>
+        <Route path="/about">
+            <About  />
+        </Route>
+      </Switch>
     </div>
   );
+}
+
+function About() {
+  return <div>about</div>;
 }
