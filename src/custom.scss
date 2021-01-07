@@ -72,6 +72,34 @@ p {
   color: $dark !important;
   font-weight: 600;
 }
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+.icon img {
+  width: 150px;
+  height: 150px;
+}
+.icon-info {
+  font-size: $normal-font-size + 2px !important;
+  color: $dark !important;
+  padding: 1em;
+  font-weight: 600;
+  width: 300px;
+}
+.decision-section {
+  width: 100%;
+  background: linear-gradient(45deg, #071e2e, #324552, #091f2f);
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+}
+.motivation-section {
+  width: 100%;
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 900px) {
   .jumbotronSection {
     width: 100%;

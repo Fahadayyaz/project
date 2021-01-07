@@ -8,6 +8,7 @@ import {
   Row,
   Col,
   Card,
+  Image,
 } from "react-bootstrap";
 import logo1 from "../../assets/homepageCompany/companies-logos/Random_App_Logo.png";
 import logo2 from "../../assets/homepageCompany/companies-logos/lamborghini_PNG10709.png";
@@ -17,6 +18,11 @@ import logo5 from "../../assets/homepageCompany/companies-logos/RPC-JP_Logo.png"
 import pic1 from "../../assets/homepageCompany/ai-pic.png";
 import pic2 from "../../assets/homepageCompany/ds-pic.png";
 import pic3 from "../../assets/homepageCompany/other-pic.png";
+import icon1 from "../../assets/homepageCompany/hiring/Group 154@2x.png";
+import icon2 from "../../assets/homepageCompany/hiring/Group 152@2x.png";
+import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
+import happypic from "../../assets/homepageCompany/happypic.png";
+import sadpic from "../../assets/homepageCompany/sadpic.png";
 
 export default function HomepageCompany() {
   return (
@@ -163,23 +169,7 @@ export default function HomepageCompany() {
               I'm looking for a resource of..
             </Col>
           </Row>
-          <Row className="section-icons section"></Row>
-        </Container>
-        <Container
-          style={{
-            paddingBottom: "2em",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-          className="hiring"
-        >
-          <Row>
-            <Col className="section-heading-hiring">
-              Your Choice of Hiring Options
-            </Col>
-          </Row>
-          <Row className="section-icons">
+          <Row className="section-icons section">
             <Col
               style={{
                 display: "flex",
@@ -224,6 +214,56 @@ export default function HomepageCompany() {
             </Col>
           </Row>
         </Container>
+        <Container
+          style={{
+            paddingBottom: "2em",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+          className="hiring"
+        >
+          <Row>
+            <Col className="section-heading-hiring">
+              Your Choice of Hiring Options
+            </Col>
+          </Row>
+          <Row className="section-icons">
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="icon"
+            >
+              <img src={icon1} alt="brand-logo" />
+              <Row className="icon-info">I'm looking for a resource of..</Row>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="icon"
+            >
+              <img src={icon2} alt="brand-logo" />
+              <Row className="icon-info">I'm looking for a resource of..</Row>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+              className="icon"
+            >
+              <img src={icon3} alt="brand-logo" />
+              <Row className="icon-info">I'm looking for a resource of..</Row>
+            </Col>
+          </Row>
+        </Container>
 
         {/* <Card border="primary" style={{ width: '18rem' }}>
     <Card.Header>Header</Card.Header>
@@ -236,6 +276,96 @@ export default function HomepageCompany() {
     </Card.Body>
   </Card> */}
       </Container>
+      <Container fluid className="decision-section">
+        <Container>
+          <Row>
+            <Col
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <h1 style={{ color: "#fff" }}>You Decide Who's Qualified</h1>
+              <p style={{ maxHeight: "30%", overflow: "hidden" }}>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <p>
+                <Button variant="dark" style={{ width: "60%" }}>
+                  Post A Job
+                </Button>
+              </p>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Image src={happypic} roundedCircle />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container fluid className="motivation-section">
+        <Container>
+          <Row>
+            <Col
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <Image src={sadpic} roundedCircle />
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <h1 style={{ color: "#242424" }}>
+                Stop Paying for Unqualified Candidates
+              </h1>
+              <p
+                style={{
+                  maxHeight: "33%",
+                  overflow: "hidden",
+                  color: "#242424",
+                }}
+              >
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+              <p>
+                <Button variant="dark" style={{ width: "60%" }}>
+                  Start Hiring
+                </Button>
+              </p>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+      <Container className="testimonials-section"></Container>
     </Container>
   );
 }
