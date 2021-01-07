@@ -8,10 +8,10 @@ export default function Main() {
   return (
     <div className="main">
       <Switch>
-        <Route path="/" exact>
+        <Route path="/company">
           <Homepage />
         </Route>
-        <Route path="/company">
+        <Route path="/" exact>
           <HomepageCompany />
         </Route>
         <Route path="/jobSeeker">
