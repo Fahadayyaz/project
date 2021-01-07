@@ -196,7 +196,7 @@ export default function HomepageCompany() {
               <Card className="bg-dark text-white imgCard">
                 <Card.Img src={pic2} alt="Card image" />
                 <Card.ImgOverlay className="overLay">
-                  <Card.Title>Data Scientist </Card.Title>
+                  <Card.Title>Data Scientest </Card.Title>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -357,9 +357,9 @@ export default function HomepageCompany() {
         </Container>
       </Container>
       <Container fluid className="stories-section">
-        
+
         <Container>
-        <img src={successpic} alt="successpic" style={{ width: "100%" }} />
+          <img src={successpic} alt="successpic" style={{ width: "100%" }} />
           <Row>
             <Col
               style={{
