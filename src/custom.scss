@@ -4,7 +4,7 @@ $primary: #eeeeee;
 $font-color: #303030;
 $dark: #0098a0;
 $heading-font-size: 25px;
-$normal-font-size: 16px;
+$normal-font-size: 17px;
 
 body {
   font-family: "Raleway", sans-serif;
@@ -98,7 +98,31 @@ p {
   width: 100%;
   min-height: 460px;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.stories-section {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
+.absoluteOverlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title {
+  position: relative;
+}
+.imageAbsolute {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 70px;
+  height: 70px;
 }
 @media (max-width: 900px) {
   .jumbotronSection {

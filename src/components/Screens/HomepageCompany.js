@@ -23,6 +23,7 @@ import icon2 from "../../assets/homepageCompany/hiring/Group 152@2x.png";
 import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
 import happypic from "../../assets/homepageCompany/happypic.png";
 import sadpic from "../../assets/homepageCompany/sadpic.png";
+import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 
 export default function HomepageCompany() {
   return (
@@ -261,17 +262,6 @@ export default function HomepageCompany() {
             </Col>
           </Row>
         </Container>
-
-        {/* <Card border="primary" style={{ width: '18rem' }}>
-    <Card.Header>Header</Card.Header>
-    <Card.Body>
-      <Card.Title>Primary Card Title</Card.Title>
-      <Card.Text>
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </Card.Text>
-    </Card.Body>
-  </Card> */}
       </Container>
       <Container fluid className="decision-section">
         <Container>
@@ -362,7 +352,109 @@ export default function HomepageCompany() {
           </Row>
         </Container>
       </Container>
-      <Container className="testimonials-section"></Container>
+      <Container fluid className="stories-section">
+        <img src={successpic} alt="successpic" style={{ width: "100%" }} />
+        <Container className="absoluteOverlay">
+          <Row style={{ minWidth: "100vw" }}>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card bg="primary" style={{ width: "22rem" }} className="mb-2">
+                <Card.Body className="card-title">
+                  <Card.Title
+                    style={{
+                      color: "#242424",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Image
+                      src={sadpic}
+                      roundedCircle
+                      className="imageAbsolute"
+                    />
+                    <div className="person-name" style={{ marginLeft: "25px" }}>
+                      Jon Snow
+                    </div>
+                    <div className="time">3 days ago</div>
+                  </Card.Title>
+                  <Card.Text
+                    style={{
+                      overflow: "hidden",
+                      color: "#242424",
+                      maxHeight: "10rem",
+                    }}
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card bg="primary" style={{ width: "22rem" }} className="mb-2">
+                <Card.Body className="card-title">
+                  <Card.Title
+                    style={{
+                      color: "#242424",
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Image
+                      src={sadpic}
+                      roundedCircle
+                      className="imageAbsolute"
+                    />
+                    <div className="person-name" style={{ marginLeft: "25px" }}>
+                      Jon Snow
+                    </div>{" "}
+                    <div className="time">3 days ago</div>
+                  </Card.Title>
+                  <Card.Text
+                    style={{
+                      overflow: "hidden",
+                      color: "#242424",
+                      maxHeight: "10rem",
+                    }}
+                  >
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </Container>
     </Container>
   );
 }
