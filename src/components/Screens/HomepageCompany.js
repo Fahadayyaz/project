@@ -25,13 +25,14 @@ import happypic from "../../assets/homepageCompany/happypic.png";
 import sadpic from "../../assets/homepageCompany/sadpic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 import "./HomepageCompany.scss";
+import StoriesCard from "../reusable/StoriesCard";
 
 export default function HomepageCompany() {
   return (
     <Container fluid>
       <Jumbotron
         className="bg-picture"
-        style={{ minHeight: "fit-content", marginBottom: "0rem" }}
+        style={{ minHeight: "560px", marginBottom: "0rem" }}
       >
         <Container
           style={{
@@ -278,17 +279,11 @@ export default function HomepageCompany() {
               }}
             >
               <h1 style={{ color: "#fff" }}>You Decide Who's Qualified</h1>
-              <p style={{ maxHeight: "30%", overflow: "hidden" }}>
+              <p style={{ overflow: "hidden" }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                of type and scrambled it to make a type
               </p>
               <p>
                 <Button variant="dark" style={{ width: "60%" }}>
@@ -303,7 +298,7 @@ export default function HomepageCompany() {
                 alignItems: "center",
               }}
             >
-              <Image src={happypic} roundedCircle />
+              <Image src={happypic} roundedCircle className="successpic" />
             </Col>
           </Row>
         </Container>
@@ -317,7 +312,7 @@ export default function HomepageCompany() {
                 alignItems: "center",
               }}
             >
-              <Image src={sadpic} roundedCircle />
+              <Image src={sadpic} roundedCircle className="successpic-alt" />
             </Col>
             <Col
               style={{
@@ -331,7 +326,6 @@ export default function HomepageCompany() {
               </h1>
               <p
                 style={{
-                  maxHeight: "33%",
                   overflow: "hidden",
                   color: "#242424",
                 }}
@@ -339,13 +333,7 @@ export default function HomepageCompany() {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets
-                containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of
-                Lorem Ipsum.
+                of type and scrambled it to make a type
               </p>
               <p>
                 <Button variant="dark" style={{ width: "60%" }}>
@@ -358,104 +346,15 @@ export default function HomepageCompany() {
       </Container>
       <Container fluid className="stories-section">
         <Container>
-          <img src={successpic} alt="successpic" style={{ width: "100%" }} />
+          <img
+            src={successpic}
+            alt="successpic"
+            className="successpic"
+            style={{ width: "100%" }}
+          />
           <Row>
-            <Col
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Card bg="primary" style={{ width: "22rem" }} className="mb-2">
-                <Card.Body className="card-title">
-                  <Card.Title
-                    style={{
-                      color: "#242424",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Image
-                      src={sadpic}
-                      roundedCircle
-                      className="imageAbsolute"
-                    />
-                    <div className="person-name" style={{ marginLeft: "25px" }}>
-                      Jon Snow
-                    </div>
-                    <div className="time">3 days ago</div>
-                  </Card.Title>
-                  <Card.Text
-                    style={{
-                      overflow: "hidden",
-                      color: "#242424",
-                      maxHeight: "10rem",
-                    }}
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Card bg="primary" style={{ width: "22rem" }} className="mb-2">
-                <Card.Body className="card-title">
-                  <Card.Title
-                    style={{
-                      color: "#242424",
-                      display: "flex",
-                      justifyContent: "space-between",
-                      alignItems: "center",
-                    }}
-                  >
-                    <Image
-                      src={sadpic}
-                      roundedCircle
-                      className="imageAbsolute"
-                    />
-                    <div className="person-name" style={{ marginLeft: "25px" }}>
-                      Jon Snow
-                    </div>{" "}
-                    <div className="time">3 days ago</div>
-                  </Card.Title>
-                  <Card.Text
-                    style={{
-                      overflow: "hidden",
-                      color: "#242424",
-                      maxHeight: "10rem",
-                    }}
-                  >
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries,
-                    but also the leap into electronic typesetting, remaining
-                    essentially unchanged. It was popularised in the 1960s with
-                    the release of Letraset sheets containing Lorem Ipsum
-                    passages, and more recently with desktop publishing software
-                    like Aldus PageMaker including versions of Lorem Ipsum.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+            <StoriesCard />
+            <StoriesCard />
           </Row>
         </Container>
       </Container>
