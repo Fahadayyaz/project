@@ -358,7 +358,7 @@ export default function HomepageCompany() {
       <Container fluid className="stories-section">
         <img src={successpic} alt="successpic" style={{ width: "100%" }} />
         <Container className="absoluteOverlay">
-          <Row style={{ minWidth: "100vw" }}>
+          <Row style={{ minWidth: "100vw", padding: "0rem 2rem" }}>
             <Col
               style={{
                 display: "flex",
