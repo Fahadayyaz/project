@@ -2,45 +2,47 @@ import React from "react";
 import "./Homepage.scss";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Container, Row, Col, Card, Nav } from "react-bootstrap";
-import pic1 from "../../assets/homepageCompany/other-pic.png";
-import pic2 from "../../assets/homepageCompany/other-pic.png";
-import pic3 from "../../assets/homepageCompany/other-pic.png";
+import pic1 from "../../assets/homepage/company.png";
+import pic2 from "../../assets/homepage/researcher.png";
+import pic3 from "../../assets/homepage/jobseeker.png";
 
 export default function Homepage() {
-  return <Container fluid >
-    <Container>
-      <Row style={{ padding: "4em 0em" }}>
-        <Col>
-          <Nav.Link as={Link} to="/company">
-            <Card className="bg-dark text-white card__body">
-              <Card.Img src={pic1} alt="Card image" />
-              <Card.ImgOverlay className="card__overlay">
-                <Card.Title>Company</Card.Title>
-              </Card.ImgOverlay>
-            </Card>
-          </Nav.Link>
-        </Col>
-        <Col>
-          <Nav.Link as={Link} to="/researcher">
-            <Card className="bg-dark text-white card__body">
-              <Card.Img src={pic2} alt="Card image" />
-              <Card.ImgOverlay className="card__overlay">
-                <Card.Title>Researcher</Card.Title>
-              </Card.ImgOverlay>
-            </Card>
-          </Nav.Link>
-        </Col>
-        <Col>
-          <Nav.Link as={Link} to="/jobseeker">
-            <Card className="bg-dark text-white card__body">
-              <Card.Img src={pic3} alt="Card image" />
-              <Card.ImgOverlay className="card__overlay">
-                <Card.Title>Job Seeker</Card.Title>
-              </Card.ImgOverlay>
-            </Card>
-          </Nav.Link>
-        </Col>
-      </Row>
+  return (
+    <Container fluid>
+      <Container>
+        <Row style={{ padding: "4em 0em" }}>
+          <Col>
+            <Nav.Link as={Link} to="/company">
+              <Card className="bg-dark text-white card__body">
+                <Card.Img src={pic1} alt="Card image" />
+                <Card.ImgOverlay className="card__overlay">
+                  <Card.Title className="card__title">Company</Card.Title>
+                </Card.ImgOverlay>
+              </Card>
+            </Nav.Link>
+          </Col>
+          <Col>
+            <Nav.Link as={Link} to="/researcher">
+              <Card className="bg-dark text-white card__body">
+                <Card.Img src={pic2} alt="Card image" />
+                <Card.ImgOverlay className="card__overlay">
+                  <Card.Title className="card__title">Researcher</Card.Title>
+                </Card.ImgOverlay>
+              </Card>
+            </Nav.Link>
+          </Col>
+          <Col>
+            <Nav.Link as={Link} to="/jobseeker">
+              <Card className="bg-dark text-white card__body">
+                <Card.Img src={pic3} alt="Card image" />
+                <Card.ImgOverlay className="card__overlay">
+                  <Card.Title className="card__title">Job Seeker</Card.Title>
+                </Card.ImgOverlay>
+              </Card>
+            </Nav.Link>
+          </Col>
+        </Row>
+      </Container>
     </Container>
-  </Container>;
+  );
 }

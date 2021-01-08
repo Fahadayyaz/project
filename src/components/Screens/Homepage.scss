@@ -1,10 +1,20 @@
-.card__body .card__overlay{
-    display: none;
-    user-select: none;
-    background-color: rgba(0,0,0,.80) !important;
+@import "../../custom.scss";
+
+.card__title {
+  font-size: $heading-font-size + 2px;
 }
-.card__body:hover .card__overlay{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card__body .card__overlay {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card__body:hover .card__overlay {
+  background-color: rgba(0, 39, 38, 0.8) !important;
+}
+.card__body:hover .card__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
