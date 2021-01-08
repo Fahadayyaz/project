@@ -9,8 +9,8 @@ import pic3 from "../../assets/homepage/jobseeker.png";
 export default function Homepage() {
   return (
     <Container fluid>
-      <Container>
-        <Row style={{ padding: "4em 0em" }}>
+      <Container style={{ paddingBottom: "4em" }}>
+        <Row className="container__row">
           <Col>
             <Nav.Link as={Link} to="/company">
               <Card className="bg-dark text-white card__body">

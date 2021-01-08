@@ -1,5 +1,8 @@
 @import "../../custom.scss";
 
+.container__row {
+  display: flex;
+}
 .card__title {
   font-size: $heading-font-size + 2px;
 }
@@ -17,4 +20,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 900px) {
+  .container__row {
+    flex-direction: column;
+  }
 }

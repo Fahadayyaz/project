@@ -16,7 +16,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col>
-            <Nav.Link href="#" className="nav__link">
+            <Nav.Link href="index.html" className="nav__link">
               <img
                 src={logo}
                 height="30"

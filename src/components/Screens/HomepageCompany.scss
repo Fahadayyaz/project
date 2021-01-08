@@ -1,7 +1,7 @@
 @import "../../custom.scss";
 
-.bg-picture {
-  background: url(./../../assets/homepageCompany/jumbotron-bg-pic.png);
+.bg-picture-company {
+  background: url(./../../assets/homepageCompany/jumbotron-bg-pic-company.png);
   background-size: contain;
 }
 .jumbotronSection {
@@ -87,7 +87,7 @@
   height: 70px;
 }
 @media (max-width: 1250px) {
-  .bg-picture {
+  .bg-picture-company {
     background-size: cover;
     background-position: center;
   }

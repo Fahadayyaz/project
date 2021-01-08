@@ -31,7 +31,7 @@ export default function HomepageCompany() {
   return (
     <Container fluid>
       <Jumbotron
-        className="bg-picture"
+        className="bg-picture-company"
         style={{ minHeight: "560px", marginBottom: "0rem" }}
       >
         <Container

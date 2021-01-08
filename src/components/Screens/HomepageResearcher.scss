@@ -1,0 +1,113 @@
+@import "../../custom.scss";
+
+.bg-picture-researcher {
+  background: url(./../../assets/homepageResearcher/jumbotron-bg-pic-researcher.png);
+  background-size: contain;
+}
+.jumbotronSection {
+  width: 90vw;
+}
+.srearch-card {
+  width: 100%;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5em 3em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 0rem !important;
+}
+.section-heading {
+  text-align: center;
+  font-size: $heading-font-size !important;
+  color: $dark !important;
+}
+.section-icons {
+  width: 90%;
+  padding: 3em 2em;
+}
+.imgCard .overLay {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center !important;
+  align-items: center !important;
+}
+.imgCard:hover .overLay {
+  display: flex;
+}
+.section-heading-hiring {
+  text-align: center;
+  font-size: $heading-font-size !important;
+  color: $dark !important;
+  font-weight: 600;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+.icon img {
+  width: 150px;
+  height: 150px;
+}
+.icon-info {
+  font-size: $normal-font-size + 2px !important;
+  color: $dark !important;
+  padding: 1em;
+  font-weight: 600;
+  width: 300px;
+}
+.decision-section {
+  width: 100%;
+  background: linear-gradient(45deg, #071e2e, #324552, #091f2f);
+  min-height: 460px;
+  display: flex;
+  align-items: center;
+}
+.motivation-section {
+  width: 100%;
+  min-height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stories-section {
+  width: 100%;
+  min-height: 500px;
+  position: relative;
+}
+.card-title {
+  position: relative;
+}
+.imageAbsolute {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 1250px) {
+  .bg-picture-researcher {
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (max-width: 900px) {
+  .jumbotronSection {
+    width: 100%;
+  }
+  .successpic {
+    margin-bottom: 20px;
+  }
+  .successpic-alt {
+    margin-top: 20px;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .srearch-card {
+    flex-direction: column;
+  }
+}
