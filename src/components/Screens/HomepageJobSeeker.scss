@@ -57,35 +57,6 @@
   font-weight: 600;
   width: 300px;
 }
-.decision-section {
-  width: 100%;
-  background: linear-gradient(45deg, #071e2e, #324552, #091f2f);
-  min-height: 460px;
-  display: flex;
-  align-items: center;
-}
-.motivation-section {
-  width: 100%;
-  min-height: 460px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.stories-section {
-  width: 100%;
-  min-height: 500px;
-  position: relative;
-}
-.card-title {
-  position: relative;
-}
-.imageAbsolute {
-  position: absolute;
-  top: -50px;
-  left: -50px;
-  width: 70px;
-  height: 70px;
-}
 @media (max-width: 1250px) {
   .bg-picture-Jobseeker {
     background-size: cover;
@@ -95,12 +66,6 @@
 @media (max-width: 900px) {
   .jumbotronSection {
     width: 100%;
-  }
-  .successpic {
-    margin-bottom: 20px;
-  }
-  .successpic-alt {
-    margin-top: 20px;
   }
   .section {
     display: flex;

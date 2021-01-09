@@ -22,9 +22,10 @@ import pic3 from "../../assets/homepageCompany/other-pic.png";
 import icon1 from "../../assets/homepageCompany/hiring/Group 154@2x.png";
 import icon2 from "../../assets/homepageCompany/hiring/Group 152@2x.png";
 import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
-import happypic from "../../assets/homepageCompany/happypic.png";
-import sadpic from "../../assets/homepageCompany/sadpic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
+import StoriesCard from "../reusable/StoriesCard";
+import JobCard from "../reusable/JobCard";
+import adpic from "../../assets/homepageJobseeker/jumbotron-bg-pic-Jobseeker.png";
 
 export default function HomepageJobSeeker() {
   return (
@@ -55,14 +56,20 @@ export default function HomepageJobSeeker() {
       <Container>
         <Form.Group className="srearch-card">
           <FormControl
-            type="search"
-            placeholder="Search"
+            type="text"
+            placeholder="Keywords"
             variant="dark"
-            style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}
+            style={{ margin: "0rem 0.5rem" }}
+          />
+          <FormControl
+            type="text"
+            placeholder="Job Location"
+            variant="dark"
+            style={{ margin: "0rem 0.5rem" }}
           />
           <Button
             variant="dark"
-            style={{ margin: "0rem 0.5rem", minWidth: "200px", width: "35%" }}
+            style={{ margin: "0rem 0.5rem", minWidth: "200px", width: "100%" }}
           >
             Search Now
           </Button>
@@ -257,78 +264,33 @@ export default function HomepageJobSeeker() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className="decision-section">
-        <Container>
+      <Container fluid className="jobs-section">
+        <Container style={{ padding: "4em 1em" }}>
+          <Row className="section-heading-hiring">Recent Jobs</Row>
           <Row>
-            <Col
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <h1 style={{ color: "#fff" }}>You Decide Who's Qualified</h1>
-              <p style={{ overflow: "hidden" }}>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type
-              </p>
-              <p>
-                <Button variant="dark" style={{ width: "60%" }}>
-                  Post A Job
-                </Button>
-              </p>
+            <Col style={{ minWidth: "65%", padding: "0em .9em" }}>
+              <Row>
+                <JobCard />
+              </Row>
+              <Row>
+                <JobCard />
+              </Row>
+              <Row>
+                <JobCard />
+              </Row>
             </Col>
-            <Col
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <Image src={happypic} roundedCircle className="successpic" />
-            </Col>
-          </Row>
-        </Container>
-      </Container>
-      <Container fluid className="motivation-section">
-        <Container>
-          <Row>
-            <Col
-              style={{
-                display: "flex",
-                alignItems: "center",
-              }}
-            >
-              <Image src={sadpic} roundedCircle className="successpic-alt" />
-            </Col>
-            <Col
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-              }}
-            >
-              <h1 style={{ color: "#242424" }}>
-                Stop Paying for Unqualified Candidates
-              </h1>
-              <p
+            <Col style={{ padding: "1em" }}>
+              <Image
+                src={adpic}
+                alt="ad placement"
+                className="ad-placement-pic"
                 style={{
-                  overflow: "hidden",
-                  color: "#242424",
+                  backgroundColor: "#0098a0",
+                  width: "100%",
+                  height: "350px",
+                  borderRadius: "12px",
                 }}
-              >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type
-              </p>
-              <p>
-                <Button variant="dark" style={{ width: "60%" }}>
-                  Start Hiring
-                </Button>
-              </p>
+              />
             </Col>
           </Row>
         </Container>
@@ -341,7 +303,10 @@ export default function HomepageJobSeeker() {
             className="successpic"
             style={{ width: "100%" }}
           />
-          <Row></Row>
+          <Row>
+            <StoriesCard />
+            <StoriesCard />
+          </Row>
         </Container>
       </Container>
     </Container>
