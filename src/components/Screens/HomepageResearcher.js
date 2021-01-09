@@ -19,13 +19,10 @@ import logo5 from "../../assets/homepageCompany/companies-logos/RPC-JP_Logo.png"
 import pic1 from "../../assets/homepageCompany/ai-pic.png";
 import pic2 from "../../assets/homepageCompany/ds-pic.png";
 import pic3 from "../../assets/homepageCompany/other-pic.png";
-import icon1 from "../../assets/homepageCompany/hiring/Group 154@2x.png";
-import icon2 from "../../assets/homepageCompany/hiring/Group 152@2x.png";
-import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
-import happypic from "../../assets/homepageCompany/happypic.png";
-import sadpic from "../../assets/homepageCompany/sadpic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 import StoriesCard from "../reusable/StoriesCard";
+import JobCard from "../reusable/JobCard";
+import adpic from "../../assets/homepageJobseeker/jumbotron-bg-pic-Jobseeker.png";
 
 export default function HomepageJobSeeker() {
   return (
