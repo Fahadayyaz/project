@@ -57,6 +57,9 @@
   font-weight: 600;
   width: 300px;
 }
+.section-jobs {
+  display: flex;
+}
 @media (max-width: 1250px) {
   .bg-picture-Jobseeker {
     background-size: cover;
@@ -66,6 +69,9 @@
 @media (max-width: 900px) {
   .jumbotronSection {
     width: 100%;
+  }
+  .section-jobs {
+    flex-direction: column;
   }
   .section {
     display: flex;

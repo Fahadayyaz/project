@@ -21,8 +21,8 @@ import pic2 from "../../assets/homepageCompany/ds-pic.png";
 import pic3 from "../../assets/homepageCompany/other-pic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 import StoriesCard from "../reusable/StoriesCard";
-import JobCard from "../reusable/JobCard";
-import adpic from "../../assets/homepageJobseeker/jumbotron-bg-pic-Jobseeker.png";
+import JobCardResearcher from "../reusable/JobCardResearcher";
+import adpic from "../../assets/homepageResearcher/jumbotron-bg-pic-researcher.png";
 
 export default function HomepageJobSeeker() {
   return (
@@ -42,12 +42,12 @@ export default function HomepageJobSeeker() {
           <h1 style={{ width: "40%", color: "#fff" }}>
             Discover Top Jobs For Data Professionals
           </h1>
-          <p style={{ width: "50%" }}>
+          <div style={{ width: "50%", color: "#fff", padding: "1em 0em" }}>
             Don't search for jobs. Find the right fit instead.
-          </p>
-          <p>
+          </div>
+          <div>
             <Button variant="outline-light">Sign Up</Button>
-          </p>
+          </div>
         </Container>
       </Jumbotron>
       <Container>
@@ -69,16 +69,16 @@ export default function HomepageJobSeeker() {
       <Container fluid className="jobs-section">
         <Container style={{ padding: "4em 1em" }}>
           <Row className="section-heading-hiring">Recent Jobs</Row>
-          <Row>
+          <Row className="section-jobs">
             <Col style={{ minWidth: "65%", padding: "0em .9em" }}>
               <Row>
-                <JobCard />
+                <JobCardResearcher />
               </Row>
               <Row>
-                <JobCard />
+                <JobCardResearcher />
               </Row>
               <Row>
-                <JobCard />
+                <JobCardResearcher />
               </Row>
             </Col>
             <Col style={{ padding: "1em" }}>

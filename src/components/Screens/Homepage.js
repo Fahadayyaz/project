@@ -9,7 +9,7 @@ import pic3 from "../../assets/homepage/jobseeker.png";
 export default function Homepage() {
   return (
     <Container fluid>
-      <Container style={{ paddingBottom: "4em" }}>
+      <Container style={{ padding: "2em 0em" }}>
         <Row className="container__row">
           <Col>
             <Nav.Link as={Link} to="/company">

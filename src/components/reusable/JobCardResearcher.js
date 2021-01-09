@@ -1,0 +1,100 @@
+import React from "react";
+import { Card, Row, Col, Button } from "react-bootstrap";
+
+export default function JobCard() {
+  return (
+    <Card
+      style={{
+        minWidth: "100%",
+        marginTop: "1em",
+        borderRadius: "12px",
+        backgroundColor: "#eeeeee",
+        minHeight: "150px",
+        border: "none",
+        boxShadow: "0px 3px 6px rgba(0,0,0,.1)",
+        padding: "1em",
+      }}
+    >
+      <Card.Body
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
+        <Card.Title style={{ color: "#0098a0" }}>
+          Machine Learning Team Lead
+        </Card.Title>
+        <Card.Text style={{ color: "#0098a0" }}>
+          <Row
+            style={{ display: "flex", alignItems: "center" }}
+            className="section-jobs"
+          >
+            <Col style={{ display: "flex", alignItems: "center" }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                className="bi bi-clock-fill"
+                viewBox="0 0 16 16"
+                style={{ marginRight: "10px" }}
+              >
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+              </svg>
+              <div className="deadline">
+                Deadline: <span>3</span> Days
+              </div>
+            </Col>
+            <Col style={{ display: "flex", alignItems: "center" }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 19.584 24.174"
+                style={{ marginRight: "10px" }}
+              >
+                <g transform="translate(-48.032)">
+                  <path
+                    d="M340.358,120.631a13.508,13.508,0,0,1,2.5-.2V119a14.012,14.012,0,0,0-3.518.382Z"
+                    transform="translate(-277.393 -113.314)"
+                    fill="#15878c"
+                  />
+                  <path
+                    d="M96.485,119.382A14.012,14.012,0,0,0,92.967,119v1.433a13.509,13.509,0,0,1,2.5.2Z"
+                    transform="translate(-42.788 -113.314)"
+                    fill="#15878c"
+                  />
+                  <path
+                    d="M134.683,6.642a12.829,12.829,0,0,0,3.649-.456c.157-.039.316-.079.479-.118l1.808-4.454-.525-.316a11.932,11.932,0,0,0-10.821,0l-.525.316,1.808,4.454c.163.039.321.078.479.118A12.826,12.826,0,0,0,134.683,6.642Z"
+                    transform="translate(-76.859)"
+                    fill="#15878c"
+                  />
+                  <path
+                    d="M66.062,158.272a18.728,18.728,0,0,0-3.1-5.128c-.414.076-.776.166-1.145.258a16.247,16.247,0,0,1-7.993,0c-.37-.092-.731-.183-1.145-.258a20.457,20.457,0,0,0-4.65,11.9,4.819,4.819,0,0,0,1.227,3.625c1.448,1.417,3.883,1.364,6.7,1.3.6-.013,1.227-.027,1.864-.027s1.26.014,1.864.027c.562.012,1.108.024,1.634.024,2.115,0,3.908-.192,5.067-1.327a4.82,4.82,0,0,0,1.227-3.625A18.672,18.672,0,0,0,66.062,158.272Zm-9.006,1.506a6.712,6.712,0,0,0,1.7.791,2.453,2.453,0,0,1-.261,4.673v1.082H57.065v-1.013a4.509,4.509,0,0,1-2.053-.958l.785-1.2.6.392a1.924,1.924,0,0,0,1.381.362c1.05.04,1.718-1.548.5-1.988a7.343,7.343,0,0,1-2.11-1.014c-1.287-1.024-.608-3.18.894-3.642v-1.022H58.5v.918a5.657,5.657,0,0,1,1.936.789l-.68,1.262-.631-.34c-.5-.3-1.954-.7-2.19.463A.5.5,0,0,0,57.056,159.778Z"
+                    transform="translate(0 -145.827)"
+                    fill="#15878c"
+                  />
+                </g>
+              </svg>
+              <div className="budget">
+                Budget : $<span>3200.00</span>
+              </div>
+            </Col>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Button variant="dark" style={{ minWidth: "150px" }}>
+                Bid Now
+              </Button>
+            </Col>
+          </Row>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  );
+}

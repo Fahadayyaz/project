@@ -45,12 +45,12 @@ export default function HomepageCompany() {
           <h1 style={{ width: "40%", color: "#fff" }}>
             Discover Top Jobs For Data Professionals
           </h1>
-          <p style={{ width: "50%" }}>
+          <div style={{ width: "50%", color: "#fff", padding: "1em 0em" }}>
             Don't search for jobs. Find the right fit instead.
-          </p>
-          <p>
+          </div>
+          <div>
             <Button variant="outline-light">Sign Up</Button>
-          </p>
+          </div>
         </Container>
       </Jumbotron>
       <Container>
@@ -279,17 +279,23 @@ export default function HomepageCompany() {
               }}
             >
               <h1 style={{ color: "#fff" }}>You Decide Who's Qualified</h1>
-              <p style={{ overflow: "hidden" }}>
+              <div
+                style={{
+                  overflow: "hidden",
+                  color: "#fff",
+                  padding: "1em 0em",
+                }}
+              >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type
-              </p>
-              <p>
+              </div>
+              <div>
                 <Button variant="dark" style={{ width: "60%" }}>
                   Post A Job
                 </Button>
-              </p>
+              </div>
             </Col>
             <Col
               style={{
@@ -324,22 +330,23 @@ export default function HomepageCompany() {
               <h1 style={{ color: "#242424" }}>
                 Stop Paying for Unqualified Candidates
               </h1>
-              <p
+              <div
                 style={{
                   overflow: "hidden",
                   color: "#242424",
+                  padding: "1em 0em",
                 }}
               >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type
-              </p>
-              <p>
+              </div>
+              <div>
                 <Button variant="dark" style={{ width: "60%" }}>
                   Start Hiring
                 </Button>
-              </p>
+              </div>
             </Col>
           </Row>
         </Container>

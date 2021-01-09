@@ -47,7 +47,7 @@ export default function Footer() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-facebook"
+                className="bi bi-facebook"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "10px" }}
               >
@@ -65,7 +65,7 @@ export default function Footer() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-twitter"
+                className="bi bi-twitter"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "10px" }}
               >
@@ -83,7 +83,7 @@ export default function Footer() {
                 width="16"
                 height="16"
                 fill="currentColor"
-                class="bi bi-instagram"
+                className="bi bi-instagram"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "10px" }}
               >

@@ -9,7 +9,7 @@ export default function JobCard() {
         marginTop: "1em",
         borderRadius: "12px",
         backgroundColor: "#eeeeee",
-        height: "150px",
+        minHeight: "150px",
         border: "none",
         boxShadow: "0px 3px 6px rgba(0,0,0,.1)",
         padding: "1em",
@@ -26,14 +26,17 @@ export default function JobCard() {
           Machine Learning Team Lead
         </Card.Title>
         <Card.Text style={{ color: "#0098a0" }}>
-          <Row style={{ display: "flex", alignItems: "center" }}>
+          <Row
+            style={{ display: "flex", alignItems: "center" }}
+            className="section-jobs"
+          >
             <Col style={{ display: "flex", alignItems: "center" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-geo-alt-fill"
+                className="bi bi-geo-alt-fill"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "10px" }}
               >
@@ -47,7 +50,7 @@ export default function JobCard() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-clock-fill"
+                className="bi bi-clock-fill"
                 viewBox="0 0 16 16"
                 style={{ marginRight: "10px" }}
               >
