@@ -1,6 +1,9 @@
 import React from "react";
 import "./Blog.scss";
 
-export default function Blog() {
-  return <div>Blog section</div>;
+class Blog extends React.Component {
+  render() {
+    return <div>Blog section</div>;
+  }
 }
+export default Blog;

@@ -1,6 +1,9 @@
 import React from "react";
 import "./AboutUs.scss";
 
-export default function AboutUs() {
-  return <div>About</div>;
+class AboutUs extends React.Component {
+  render() {
+    return <div>About</div>;
+  }
 }
+export default AboutUs;

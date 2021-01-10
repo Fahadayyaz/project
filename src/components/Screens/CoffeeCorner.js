@@ -1,6 +1,9 @@
 import React from "react";
 import "./CoffeeCorner.scss";
 
-export default function CoffeeCorner() {
-  return <div>Coffee Corner</div>;
+class CoffeeCorner extends React.Component {
+  render() {
+    return <div>Coffee Corner</div>;
+  }
 }
+export default CoffeeCorner;

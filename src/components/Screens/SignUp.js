@@ -1,6 +1,9 @@
 import React from "react";
 import "./SignUp.scss";
 
-export default function SignUp() {
-  return <div>Sign Up</div>;
+class SignUp extends React.Component {
+  render() {
+    return <div>Sign Up</div>;
+  }
 }
+export default SignUp;
