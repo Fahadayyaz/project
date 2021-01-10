@@ -29,5 +29,18 @@ p {
 .footer .nav__link {
   padding: 0.1em 0.5em !important;
 }
+.signup-btn {
+  padding: 1em;
+  border: 1px solid $primary !important;
+  width: fit-content;
+  background-color: transparent;
+  color: $primary;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.signup-btn:hover {
+  background-color: $primary;
+  color: $dark;
+}
 
 @import "~bootstrap/scss/bootstrap";

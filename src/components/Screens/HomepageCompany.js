@@ -10,7 +10,9 @@ import {
   Card,
   Image,
   InputGroup,
+  Nav,
 } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo1 from "../../assets/homepageCompany/companies-logos/Random_App_Logo.png";
 import logo2 from "../../assets/homepageCompany/companies-logos/lamborghini_PNG10709.png";
 import logo3 from "../../assets/homepageCompany/companies-logos/580b57fcd9996e24bc43c51f.png";
@@ -51,7 +53,9 @@ class HomepageCompany extends React.Component {
               Don't search for jobs. Find the right fit instead.
             </div>
             <div>
-              <Button variant="outline-light">Sign Up</Button>
+              <Nav.Link as={Link} to="/sign-up" className="signup-btn">
+                Sign Up
+              </Nav.Link>
             </div>
           </Container>
         </Jumbotron>
