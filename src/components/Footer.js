@@ -8,6 +8,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 
 export default function Footer() {
@@ -16,7 +17,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col>
-            <Nav.Link href="index.html" className="nav__link">
+            <Nav.Link as={Link} to="/" className="nav__link">
               <img
                 src={logo}
                 height="30"

@@ -26,7 +26,7 @@ import icon3 from "../../assets/homepageCompany/hiring/Group 153@2x.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 import StoriesCard from "../reusable/StoriesCard";
 import JobCardJobSeeker from "../reusable/JobCardJobSeeker";
-import adpic from "../../assets/homepageJobseeker/jumbotron-bg-pic-Jobseeker.png";
+import adpic from "../../assets/homepageCompany/ds-pic.png";
 
 class HomepageJobSeeker extends React.Component {
   render() {
@@ -57,7 +57,7 @@ class HomepageJobSeeker extends React.Component {
         </Jumbotron>
         <Container>
           <Form.Group className="srearch-card">
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+            <InputGroup style={{ margin: "0rem 0.5rem" }}>
               <InputGroup.Prepend>
                 <InputGroup.Text
                   style={{
@@ -89,7 +89,7 @@ class HomepageJobSeeker extends React.Component {
                 }}
               />
             </InputGroup>
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+            <InputGroup style={{ margin: "0rem 0.5rem" }}>
               <InputGroup.Prepend>
                 <InputGroup.Text
                   style={{

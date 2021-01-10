@@ -57,7 +57,7 @@ class HomepageCompany extends React.Component {
         </Jumbotron>
         <Container>
           <Form.Group className="srearch-card">
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+            <InputGroup style={{ margin: "0rem 0.5rem" }}>
               <InputGroup.Prepend>
                 <InputGroup.Text
                   style={{
@@ -90,7 +90,7 @@ class HomepageCompany extends React.Component {
                 <option>Employeer</option>
               </Form.Control>
             </InputGroup>
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+            <InputGroup style={{ margin: "0rem 0.5rem" }}>
               <InputGroup.Prepend>
                 <InputGroup.Text
                   style={{
@@ -122,7 +122,7 @@ class HomepageCompany extends React.Component {
                 }}
               />
             </InputGroup>
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+            <InputGroup style={{ margin: "0rem 0.5rem" }}>
               <InputGroup.Prepend>
                 <InputGroup.Text
                   style={{

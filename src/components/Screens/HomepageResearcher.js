@@ -23,7 +23,7 @@ import pic3 from "../../assets/homepageCompany/other-pic.png";
 import successpic from "../../assets/homepageCompany/SUCCESS STORIES.png";
 import StoriesCard from "../reusable/StoriesCard";
 import JobCardResearcher from "../reusable/JobCardResearcher";
-import adpic from "../../assets/homepageResearcher/jumbotron-bg-pic-researcher.png";
+import adpic from "../../assets/homepageCompany/ds-pic.png";
 
 class HomepageResearcher extends React.Component {
   render() {
