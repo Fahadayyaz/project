@@ -9,6 +9,7 @@ import {
   Col,
   Card,
   Image,
+  InputGroup,
 } from "react-bootstrap";
 import logo1 from "../../assets/homepageCompany/companies-logos/Random_App_Logo.png";
 import logo2 from "../../assets/homepageCompany/companies-logos/lamborghini_PNG10709.png";
@@ -56,22 +57,103 @@ class HomepageCompany extends React.Component {
         </Jumbotron>
         <Container>
           <Form.Group className="srearch-card">
-            <Form.Control as="select">
-              <option>Freelance</option>
-              <option>Employeer</option>
-            </Form.Control>
-            <FormControl
-              type="text"
-              placeholder="Keywords"
-              variant="dark"
-              style={{ margin: "0rem 0.5rem" }}
-            />
-            <FormControl
-              type="text"
-              placeholder="Job Location"
-              variant="dark"
-              style={{ margin: "0rem 0.5rem" }}
-            />
+            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+              <InputGroup.Prepend>
+                <InputGroup.Text
+                  style={{
+                    backgroundColor: "white",
+                    borderRight: "none",
+                    color: "#15878c",
+                  }}
+                  id="inputGroup-sizing-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <Form.Control
+                as="select"
+                style={{
+                  marginLeft: "0em",
+                  borderLeft: "none",
+                }}
+              >
+                <option>Freelance</option>
+                <option>Employeer</option>
+              </Form.Control>
+            </InputGroup>
+            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+              <InputGroup.Prepend>
+                <InputGroup.Text
+                  style={{
+                    backgroundColor: "white",
+                    borderRight: "none",
+                    color: "#15878c",
+                  }}
+                  id="inputGroup-sizing-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl
+                type="text"
+                placeholder="Keywords"
+                variant="dark"
+                style={{
+                  marginLeft: "0em",
+                  borderLeft: "none",
+                }}
+              />
+            </InputGroup>
+            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+              <InputGroup.Prepend>
+                <InputGroup.Text
+                  style={{
+                    backgroundColor: "white",
+                    borderRight: "none",
+                    color: "#15878c",
+                  }}
+                  id="inputGroup-sizing-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl
+                type="text"
+                placeholder="Job Location"
+                variant="dark"
+                style={{
+                  marginLeft: "0em",
+                  borderLeft: "none",
+                }}
+              />
+            </InputGroup>
             <Button
               variant="dark"
               style={{
