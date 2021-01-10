@@ -10,6 +10,7 @@ import {
   Col,
   Card,
   Image,
+  InputGroup,
 } from "react-bootstrap";
 import logo1 from "../../assets/homepageCompany/companies-logos/Random_App_Logo.png";
 import logo2 from "../../assets/homepageCompany/companies-logos/lamborghini_PNG10709.png";
@@ -53,12 +54,38 @@ class HomepageResearcher extends React.Component {
         </Jumbotron>
         <Container>
           <Form.Group className="srearch-card">
-            <FormControl
-              type="search"
-              placeholder="Search"
-              variant="dark"
-              style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}
-            />
+            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+              <InputGroup.Prepend>
+                <InputGroup.Text
+                  style={{
+                    backgroundColor: "white",
+                    borderRight: "none",
+                    color: "#15878c",
+                  }}
+                  id="inputGroup-sizing-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl
+                type="search"
+                placeholder="Search"
+                variant="dark"
+                style={{
+                  marginLeft: "0em",
+                  borderLeft: "none",
+                }}
+              />
+            </InputGroup>
             <Button
               variant="dark"
               style={{ margin: "0rem 0.5rem", minWidth: "200px", width: "35%" }}
@@ -69,9 +96,14 @@ class HomepageResearcher extends React.Component {
         </Container>
         <Container fluid className="jobs-section">
           <Container style={{ padding: "4em 1em" }}>
-            <Row className="section-heading-hiring">Recent Jobs</Row>
+            <Row
+              className="section-heading-hiring"
+              style={{ padding: "0em .8em" }}
+            >
+              Recent Jobs
+            </Row>
             <Row className="section-jobs">
-              <Col style={{ minWidth: "65%", padding: "0em .9em" }}>
+              <Col style={{ minWidth: "65%", padding: "0em 1.9em" }}>
                 <Row>
                   <JobCardResearcher />
                 </Row>

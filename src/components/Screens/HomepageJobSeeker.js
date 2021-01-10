@@ -10,6 +10,7 @@ import {
   Col,
   Card,
   Image,
+  InputGroup,
 } from "react-bootstrap";
 import logo1 from "../../assets/homepageCompany/companies-logos/Random_App_Logo.png";
 import logo2 from "../../assets/homepageCompany/companies-logos/lamborghini_PNG10709.png";
@@ -62,12 +63,38 @@ class HomepageJobSeeker extends React.Component {
               variant="dark"
               style={{ margin: "0rem 0.5rem" }}
             />
-            <FormControl
-              type="text"
-              placeholder="Job Location"
-              variant="dark"
-              style={{ margin: "0rem 0.5rem" }}
-            />
+            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
+              <InputGroup.Prepend>
+                <InputGroup.Text
+                  style={{
+                    backgroundColor: "white",
+                    borderRight: "none",
+                    color: "#15878c",
+                  }}
+                  id="inputGroup-sizing-sm"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                  </svg>
+                </InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl
+                type="text"
+                placeholder="Job Location"
+                variant="dark"
+                style={{
+                  marginLeft: "0em",
+                  borderLeft: "none",
+                }}
+              />
+            </InputGroup>
             <Button
               variant="dark"
               style={{
@@ -271,9 +298,14 @@ class HomepageJobSeeker extends React.Component {
         </Container>
         <Container fluid>
           <Container style={{ padding: "4em 1em" }}>
-            <Row className="section-heading-hiring">Recent Jobs</Row>
+            <Row
+              className="section-heading-hiring"
+              style={{ padding: "0em .8em" }}
+            >
+              Recent Jobs
+            </Row>
             <Row className="section-jobs">
-              <Col style={{ minWidth: "65%", padding: "0em .9em" }}>
+              <Col style={{ minWidth: "65%", padding: "0em 1.9em" }}>
                 <Row>
                   <JobCardJobSeeker />
                 </Row>
