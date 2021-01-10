@@ -4,6 +4,11 @@ import HomepageCompany from "./Screens/HomepageCompany";
 import HomepageResearcher from "./Screens/HomepageResearcher";
 import HomepageJobSeeker from "./Screens/HomepageJobSeeker";
 import Homepage from "./Screens/Homepage";
+import AboutUs from "./Screens/AboutUs";
+import Login from "./Screens/Login";
+import SignUp from "./Screens/SignUp";
+import Blog from "./Screens/Blog";
+import CoffeeCorner from "./Screens/CoffeeCorner";
 
 export default function Main() {
   return (
@@ -21,14 +26,22 @@ export default function Main() {
         <Route path="/jobSeeker">
           <HomepageJobSeeker />
         </Route>
-        <Route path="/about">
-          <About />
+        <Route path="/about-us">
+          <AboutUs />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/sign-up">
+          <SignUp />
+        </Route>
+        <Route path="/blog">
+          <Blog />
+        </Route>
+        <Route path="/coffee-corner">
+          <CoffeeCorner />
         </Route>
       </Switch>
     </div>
   );
-}
-
-function About() {
-  return <div>about</div>;
 }
