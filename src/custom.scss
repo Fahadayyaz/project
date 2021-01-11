@@ -14,12 +14,39 @@ p {
   font-size: $normal-font-size + 2px;
 }
 .nav__link {
-  color: $font-color !important;
-  font-weight: 400 !important;
+  color: $font-color;
+  font-weight: 400;
   font-size: $normal-font-size !important;
 }
 .nav__link:hover {
+  transition: 50ms;
   color: $dark !important;
+}
+.cta {
+  padding: 0.3em 1em !important;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: 50ms;
+}
+.primary-cta {
+  color: $dark !important;
+  background-color: transparent;
+  border-color: $dark;
+}
+.primary-cta:hover {
+  color: $dark;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+.secondary-cta {
+  color: $dark !important;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+}
+.secondary-cta:hover {
+  color: $dark;
+  background-color: transparent;
+  border-color: $dark;
 }
 .footer {
   width: 100vw;

@@ -14,7 +14,7 @@ import logo from "../assets/logo.svg";
 export default function Footer() {
   return (
     <div className="footer">
-      <Container>
+      <Container style={{ minWidth: "1320px" }}>
         <Row>
           <Col>
             <Nav.Link as={Link} to="/" className="nav__link">
@@ -27,13 +27,25 @@ export default function Footer() {
             </Nav.Link>
           </Col>
           <Col>
-            <Nav.Link href="#" className="nav__link">
+            <Nav.Link
+              href="#"
+              className="nav__link"
+              style={{ fontWeight: "600" }}
+            >
               About Us
             </Nav.Link>
-            <Nav.Link href="#" className="nav__link">
+            <Nav.Link
+              href="#"
+              className="nav__link"
+              style={{ fontWeight: "600" }}
+            >
               Contacts
             </Nav.Link>
-            <Nav.Link href="#" className="nav__link">
+            <Nav.Link
+              href="#"
+              className="nav__link"
+              style={{ fontWeight: "600" }}
+            >
               Terms & Conditions
             </Nav.Link>
           </Col>
@@ -93,7 +105,7 @@ export default function Footer() {
               Instagram
             </Nav.Link>
           </Col>
-          <Col xs={3}>
+          {/* <Col xs={3}>
             <Nav.Link href="#" className="nav__link">
               Subscribe to Our Newsletter
             </Nav.Link>
@@ -112,7 +124,7 @@ export default function Footer() {
               />
               <Button variant="dark">Submit</Button>
             </Form.Group>
-          </Col>
+          </Col> */}
           <Col xs={4}>
             <Nav.Link href="#" className="nav__link">
               497 Evergreen Rd. Roseville, CA 95673

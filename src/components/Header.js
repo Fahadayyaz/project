@@ -24,17 +24,29 @@ export default function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
-            <Nav.Link as={Link} to="/coffee-corner" className="nav__link">
-              Coffee Corner
-            </Nav.Link>
             <Nav.Link as={Link} to="/about-us" className="nav__link">
               About Us
+            </Nav.Link>
+            <Nav.Link as={Link} to="/coffee-corner" className="nav__link">
+              Coffee Corner
             </Nav.Link>
             <Nav.Link as={Link} to="/blog" className="nav__link">
               Blog
             </Nav.Link>
-            <Nav.Link as={Link} to="/login" className="nav__link">
+            <Nav.Link
+              as={Link}
+              to="/login"
+              className="nav__link primary-cta cta"
+              style={{ marginRight: "10px" }}
+            >
               Login
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
+              to="/sign-up"
+              className="nav__link secondary-cta cta"
+            >
+              Sign Up
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

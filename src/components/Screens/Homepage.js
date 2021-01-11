@@ -10,7 +10,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <Container fluid>
-        <Container style={{ padding: "2em 0em" }}>
+        <Container style={{ padding: "4em 0em", minWidth: "1320px" }}>
           <Row className="container__row">
             <Col>
               <Nav.Link as={Link} to="/company">
@@ -27,7 +27,7 @@ class Homepage extends React.Component {
                 <Card className="bg-dark text-white card__body">
                   <Card.Img src={pic2} alt="Card image" />
                   <Card.ImgOverlay className="card__overlay">
-                    <Card.Title className="card__title">Researcher</Card.Title>
+                    <Card.Title className="card__title">Employment</Card.Title>
                   </Card.ImgOverlay>
                 </Card>
               </Nav.Link>
@@ -37,7 +37,7 @@ class Homepage extends React.Component {
                 <Card className="bg-dark text-white card__body">
                   <Card.Img src={pic3} alt="Card image" />
                   <Card.ImgOverlay className="card__overlay">
-                    <Card.Title className="card__title">Job Seeker</Card.Title>
+                    <Card.Title className="card__title">Freelancer</Card.Title>
                   </Card.ImgOverlay>
                 </Card>
               </Nav.Link>
