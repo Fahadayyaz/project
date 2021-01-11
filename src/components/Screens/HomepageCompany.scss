@@ -86,6 +86,10 @@
   width: 70px;
   height: 70px;
 }
+.checkbox__btn:focus {
+  background-color: $dark;
+  color: $primary;
+}
 @media (max-width: 1250px) {
   .bg-picture-company {
     background-size: cover;
