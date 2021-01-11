@@ -14,7 +14,7 @@ import logo from "../assets/logo.svg";
 export default function Footer() {
   return (
     <div className="footer">
-      <Container style={{ minWidth: "1320px" }}>
+      <Container>
         <Row>
           <Col>
             <Nav.Link as={Link} to="/" className="nav__link">

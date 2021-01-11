@@ -31,6 +31,22 @@ import "./HomepageCompany.scss";
 import StoriesCard from "../reusable/StoriesCard";
 
 class HomepageCompany extends React.Component {
+  isCheckedFreelancer() {
+    const check = document.querySelector(".checkbox__btn__freelancer");
+    if (!check.classList.contains("checked")) {
+      check.classList.add("checked");
+    } else {
+      check.classList.remove("checked");
+    }
+  }
+  isCheckedEmployeer() {
+    const check = document.querySelector(".checkbox__btn__employeer");
+    if (!check.classList.contains("checked")) {
+      check.classList.add("checked");
+    } else {
+      check.classList.remove("checked");
+    }
+  }
   render() {
     return (
       <Container fluid>
@@ -64,19 +80,23 @@ class HomepageCompany extends React.Component {
             <Col>
               <Row
                 className="section-heading-hiring"
-                style={{ padding: ".3em .8em" }}
+                style={{ padding: ".3em .3em" }}
               >
                 Search for Projects
               </Row>
               <Row>
                 <Col
                   style={{
-                    padding: "0px",
-                    paddingLeft: "7px",
+                    padding: " 0px 7px",
                     maxWidth: "fit-content",
                   }}
                 >
-                  <Button variant="primary" className="checkbox__btn">
+                  <Button
+                    variant="primary"
+                    className="checkbox__btn checkbox__btn__freelancer"
+                    onClick={this.isCheckedFreelancer}
+                    value="0"
+                  >
                     Freelancer
                   </Button>
                 </Col>
@@ -86,7 +106,13 @@ class HomepageCompany extends React.Component {
                     maxWidth: "fit-content",
                   }}
                 >
-                  <Button variant="primary" className="checkbox__btn">
+                  <Button
+                    variant="primary"
+                    className="checkbox__btn checkbox__btn__employeer"
+                    style={{ borderLeftWidth: "5px" }}
+                    onClick={this.isCheckedEmployeer}
+                    value="0"
+                  >
                     Employeer
                   </Button>
                 </Col>

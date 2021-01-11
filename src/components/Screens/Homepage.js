@@ -10,7 +10,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <Container fluid>
-        <Container style={{ padding: "4em 0em", minWidth: "1320px" }}>
+        <Container style={{ padding: "4em 0em" }}>
           <Row className="container__row">
             <Col>
               <Nav.Link as={Link} to="/company">

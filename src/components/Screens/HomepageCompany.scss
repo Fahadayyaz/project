@@ -86,9 +86,13 @@
   width: 70px;
   height: 70px;
 }
-.checkbox__btn:focus {
-  background-color: $dark;
-  color: $primary;
+.checkbox__btn {
+  background-color: white !important;
+  border: 1px solid $dark !important;
+}
+.checked {
+  background-color: $dark !important;
+  color: white !important;
 }
 @media (max-width: 1250px) {
   .bg-picture-company {
