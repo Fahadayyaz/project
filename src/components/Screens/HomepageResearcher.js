@@ -58,76 +58,103 @@ class HomepageResearcher extends React.Component {
         </Jumbotron>
         <Container>
           <Form.Group className="srearch-card">
-            <InputGroup style={{ margin: "0rem 0.5rem", maxWidth: "65%" }}>
-              <InputGroup.Prepend>
-                <InputGroup.Text
-                  style={{
-                    backgroundColor: "white",
-                    borderRight: "none",
-                    color: "#15878c",
-                  }}
-                  id="inputGroup-sizing-sm"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-search"
-                    viewBox="0 0 16 16"
+            <Col>
+              <Row
+                className="section-heading-hiring"
+                style={{ padding: ".3em .8em" }}
+              >
+                Search for Projects
+              </Row>
+              <Row>
+                <Col style={{ padding: "0px 7px" }}>
+                  <InputGroup
+                    style={{ margin: "0rem 0.5rem", minWidth: "100%" }}
                   >
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                  </svg>
-                </InputGroup.Text>
-              </InputGroup.Prepend>
-              <FormControl
-                type="search"
-                placeholder="Search"
-                variant="dark"
-                style={{
-                  marginLeft: "0em",
-                  borderLeft: "none",
-                }}
-              />
-            </InputGroup>
-            <InputGroup style={{ margin: "0rem 0.5rem" }}>
-              <InputGroup.Prepend>
-                <InputGroup.Text
+                    <InputGroup.Prepend>
+                      <InputGroup.Text
+                        style={{
+                          backgroundColor: "white",
+                          borderRight: "none",
+                          color: "#15878c",
+                        }}
+                        id="inputGroup-sizing-sm"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-search"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                      </InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl
+                      type="search"
+                      placeholder="Search"
+                      variant="dark"
+                      style={{
+                        marginLeft: "0em",
+                        borderLeft: "none",
+                      }}
+                    />
+                  </InputGroup>
+                </Col>
+                <Col style={{ padding: "0px 7px" }}>
+                  <InputGroup style={{ margin: "0rem 0.5rem" }}>
+                    <InputGroup.Prepend>
+                      <InputGroup.Text
+                        style={{
+                          backgroundColor: "white",
+                          borderRight: "none",
+                          color: "#15878c",
+                        }}
+                        id="inputGroup-sizing-sm"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                      </InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <FormControl
+                      type="text"
+                      placeholder="Job Location"
+                      variant="dark"
+                      style={{
+                        marginLeft: "0em",
+                        borderLeft: "none",
+                      }}
+                    />
+                  </InputGroup>
+                </Col>
+                <Col
                   style={{
-                    backgroundColor: "white",
-                    borderRight: "none",
-                    color: "#15878c",
+                    padding: "0px 7px",
+                    minWidth: "200px",
+                    width: "35%",
                   }}
-                  id="inputGroup-sizing-sm"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-geo-alt-fill"
-                    viewBox="0 0 16 16"
+                  <Button
+                    variant="dark"
+                    style={{
+                      margin: "0rem 0.5rem",
+                      minWidth: "100%",
+                    }}
                   >
-                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                  </svg>
-                </InputGroup.Text>
-              </InputGroup.Prepend>
-              <FormControl
-                type="text"
-                placeholder="Job Location"
-                variant="dark"
-                style={{
-                  marginLeft: "0em",
-                  borderLeft: "none",
-                }}
-              />
-            </InputGroup>
-            <Button
-              variant="dark"
-              style={{ margin: "0rem 0.5rem", minWidth: "200px", width: "35%" }}
-            >
-              Search Now
-            </Button>
+                    Search Now
+                  </Button>
+                </Col>
+              </Row>
+            </Col>
           </Form.Group>
         </Container>
         <Container fluid className="jobs-section">
@@ -136,7 +163,7 @@ class HomepageResearcher extends React.Component {
               className="section-heading-hiring"
               style={{ padding: "0em .8em" }}
             >
-              Recent Jobs
+              Recent Data Projects
             </Row>
             <Row className="section-jobs">
               <Col style={{ minWidth: "65%", padding: "0em 1.9em" }}>
@@ -177,7 +204,7 @@ class HomepageResearcher extends React.Component {
           >
             <Row>
               <Col className="section-heading">
-                I'm looking for a resource of..
+                I'm looking for Projects related to..
               </Col>
             </Row>
             <Row className="section-icons section">
